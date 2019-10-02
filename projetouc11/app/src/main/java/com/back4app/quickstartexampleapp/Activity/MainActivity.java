@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 ParseFile arquivoParse = new ParseFile("imagem.png",byteArray);
 
                 // 6.1 - add uma classe simpledataFormat
-                SimpleDateFormat dateFormat = new SimpleDateFormat("ddmmaahhmmss");
+                SimpleDateFormat dateFormat = new SimpleDateFormat("ddmmaaahhmmss");
                 String nomeImagem = dateFormat.format(new Date());
                 ParseFile arquivoParse2 = new ParseFile(nomeImagem + " -imagem.png ", byteArray);
 

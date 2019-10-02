@@ -1,6 +1,8 @@
 package com.back4app.quickstartexampleapp;
 
 import com.parse.Parse;
+import com.parse.ParseACL;
+
 import android.app.Application;
 
 
@@ -15,5 +17,9 @@ public class App extends Application {
                 .server(getString(R.string.back4app_server_url))
                 .build()
         );
+
+        //ParseACL defaultAcl = new ParseACL();
+
+        //defaultAcl.setPublicReadAccess(true);
     }
 }
