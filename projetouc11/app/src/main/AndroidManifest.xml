@@ -14,7 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.FeedUsuariosActivity"></activity>
+        <activity
+            android:name=".Activity.FeedUsuariosActivity"
+            android:label="@string/title_activity_feed_usuarios"
+            android:parentActivityName=".Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.back4app.quickstartexampleapp.Activity.MainActivity" />
+        </activity>
         <activity android:name=".Activity.CadastroActivity" />
         <activity android:name=".Activity.MainActivity" />
         <activity android:name=".Activity.LoginActivity">

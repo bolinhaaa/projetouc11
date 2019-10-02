@@ -8,5 +8,6 @@
 
     <string name="app_name">Em Produção</string>
     <string name="appbar_scrolling_view_behavior">texto</string>
+    <string name="title_activity_feed_usuarios">FeedUsuariosActivity</string>
 
 </resources>

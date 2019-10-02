@@ -7,8 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".Activity.FeedUsuariosActivity">
 
-    <include
-        layout="@layout/toolbar"
-        android:id="@+id/toolbar_feed_usuario"/>
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar_feed_usuarios"/>
+
+    <include layout="@layout/content_feed_usuarios2"/>
 
 </android.support.design.widget.CoordinatorLayout>
