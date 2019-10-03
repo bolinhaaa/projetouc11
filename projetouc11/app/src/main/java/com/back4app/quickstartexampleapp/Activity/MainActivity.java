@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 
 import com.back4app.quickstartexampleapp.Adapter.TabsAdapter;
+import com.back4app.quickstartexampleapp.Fragment.HomeFragment_;
 import com.back4app.quickstartexampleapp.R;
 import com.back4app.quickstartexampleapp.Util.SlidingTabLayout;
 import com.parse.ParseException;
@@ -142,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Post Ok!", Toast.LENGTH_SHORT).show();
 
                             TabsAdapter adapterNovo = (TabsAdapter) viewPager.getAdapter();
-                            HomeFragment homeFragmentNovo = (HomeFragment) adapterNovo.getFragment(0);
+                            HomeFragment_ homeFragmentNovo = (HomeFragment_) adapterNovo.getFragment(0);
                             homeFragmentNovo.atualizarPostagens();
                         }
                         else {

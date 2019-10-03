@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.back4app.quickstartexampleapp.Activity.FeedUsuariosActivity_;
 import com.back4app.quickstartexampleapp.Adapter.UsuariosAdapter;
 import com.back4app.quickstartexampleapp.R;
 import com.parse.FindCallback;
@@ -38,7 +39,7 @@ public class UsuariosFragment_ extends Fragment {
 
 
     @Override
-    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_usuarios_fragment_, container, false);
@@ -61,7 +62,7 @@ public class UsuariosFragment_ extends Fragment {
                 ParseUser parseUser = usuarios.get(position);
 
                 /// enviar dados para o feed usuario
-                Intent intent = new Intent(getActivity(), FeedUsuariosActivity.class);
+                Intent intent = new Intent(getActivity(), FeedUsuariosActivity_.class);
                 intent.putExtra("username", parseUser.getUsername());
                 startActivity(intent);
             }

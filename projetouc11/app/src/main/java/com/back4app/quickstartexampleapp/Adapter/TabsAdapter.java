@@ -12,6 +12,8 @@ import android.text.Spanned;
 import android.text.style.ImageSpan;
 import android.view.ViewGroup;
 
+import com.back4app.quickstartexampleapp.Fragment.HomeFragment_;
+import com.back4app.quickstartexampleapp.Fragment.UsuariosFragment_;
 import com.back4app.quickstartexampleapp.R;
 
 import java.util.HashMap;
@@ -45,11 +47,11 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
         // position = 0 Home ou =1 Usuarios
         switch (position) {
             case 0:
-                fragment = new HomeFragment();
+                fragment = new HomeFragment_();
                 fragmentosUtilizados.put(position, fragment);
                 break;
             case 1:
-                fragment = new UsuariosFragment();
+                fragment = new UsuariosFragment_();
                 break;
         }
         return fragment;
