@@ -16,12 +16,10 @@ import android.widget.Toast;
 
 
 import com.back4app.quickstartexampleapp.Adapter.TabsAdapter;
-import com.back4app.quickstartexampleapp.Fragment.HomeFragment;
 import com.back4app.quickstartexampleapp.R;
 import com.back4app.quickstartexampleapp.Util.SlidingTabLayout;
 import com.parse.ParseException;
 import com.parse.ParseFile;
-import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;

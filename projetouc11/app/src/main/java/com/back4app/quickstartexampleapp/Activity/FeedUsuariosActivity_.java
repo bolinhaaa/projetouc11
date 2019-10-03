@@ -22,7 +22,7 @@ import com.parse.ParseQuery;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FeedUsuariosActivity extends AppCompatActivity {
+public class FeedUsuariosActivity_ extends AppCompatActivity {
 
     private Toolbar toolbar;
     private ListView listView;
@@ -30,17 +30,16 @@ public class FeedUsuariosActivity extends AppCompatActivity {
     private ArrayAdapter<ParseObject> adapter;
     private ArrayList<ParseObject> postagens;
 
-    // referencia com o textopreto
     @SuppressLint("ResourceAsColor")
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feed_usuarios2);
+        setContentView(R.layout.activity_feed_usuarios_);
 
         toolbar = (Toolbar)findViewById(R.id.toolbar_feed_usuarios);
 
-        // recuperar dados pela intent
+        // recuperar dados eviados pela intent
         Intent intent = getIntent();
         userName = intent.getStringExtra("username");
 
@@ -51,11 +50,9 @@ public class FeedUsuariosActivity extends AppCompatActivity {
         toolbar.setNavigationIcon(R.drawable.ic_action_arrow_left);
         setSupportActionBar(toolbar);
 
-        // configurar a listView e adapter
+        // configurar listView e Adapter
         postagens = new ArrayList<>();
-        listView = (ListView)findViewById(R.id.list_feed_usuarios);
-
-        // usando o memso adapter do home
+        listView=(ListView)findViewById(R.id.list_feed_usuarios);
         adapter = new HomeAdapter(getApplicationContext(),postagens);
         listView.setAdapter(adapter);
 
@@ -64,15 +61,15 @@ public class FeedUsuariosActivity extends AppCompatActivity {
     }
 
     private void getPostagens() {
-        // recuperar imagens das ponstagens
+        // recuperar imagens das postagens
         ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Imagem");
-        query.whereEqualTo("username", userName);
+        query.whereEqualTo("username",userName);
         query.orderByAscending("createdAt");
 
         query.findInBackground(new FindCallback<ParseObject>() {
             @Override
             public void done(List<ParseObject> objects, ParseException e) {
-                if (e == null ) {
+                if (e == null) {
                     if (objects.size() > 0 ) {
                         postagens.clear();
                         for (ParseObject parseObject:objects) {
@@ -82,7 +79,7 @@ public class FeedUsuariosActivity extends AppCompatActivity {
                     }
                 }
                 else {
-
+                    Toast.makeText(FeedUsuariosActivity_.this, "Erro ao Recuperar o Feed", Toast.LENGTH_SHORT).show();
                 }
             }
         });

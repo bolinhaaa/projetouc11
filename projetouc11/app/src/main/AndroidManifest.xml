@@ -15,8 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activity.FeedUsuariosActivity"
-            android:label="@string/title_activity_feed_usuarios"
+            android:name=".Activity.FeedUsuariosActivity_"
+            android:label="@string/title_activity_feed_usuarios_"
             android:parentActivityName=".Activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

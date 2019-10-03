@@ -10,4 +10,8 @@
     <string name="appbar_scrolling_view_behavior">texto</string>
     <string name="title_activity_feed_usuarios">FeedUsuariosActivity</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_feed_usuarios_">FeedUsuariosActivity_</string>
+
 </resources>

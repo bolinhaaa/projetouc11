@@ -10,6 +10,6 @@
     <include layout="@layout/toolbar"
         android:id="@+id/toolbar_feed_usuarios"/>
 
-    <include layout="@layout/content_feed_usuarios2"/>
+    <include layout="@layout/content_feed_usuarios_activity_"/>
 
 </android.support.design.widget.CoordinatorLayout>
