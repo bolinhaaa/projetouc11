@@ -34,8 +34,8 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
         this.context = c ;
 
         //Metrics
-        double escala = this.context.getResources().getDisplayMetrics().density;
-        tamanhoIcone = (int)(36*escala);
+        double escala=this.context.getResources().getDisplayMetrics().density;
+        tamanhoIcone=(int)(36*escala);
 
         //inicializar
         this.fragmentosUtilizados = new HashMap<>();
@@ -72,7 +72,7 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         //recuperar o icone de acordo com o position
-        Drawable drawable = ContextCompat.getDrawable(this.context,icones[position]);
+        Drawable drawable=ContextCompat.getDrawable(this.context,icones[position]);
 
         // passar o tamanho para o drawble
         drawable.setBounds(0,0,tamanhoIcone,tamanhoIcone);
@@ -81,7 +81,7 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
         ImageSpan imageSpan = new ImageSpan(drawable);
 
         // retornar um charsequence
-        SpannableString spannableString = new SpannableString("");
+        SpannableString spannableString = new SpannableString(" ");
         spannableString.setSpan(imageSpan,0,spannableString.length(),
                 Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
