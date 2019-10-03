@@ -23,9 +23,6 @@ import com.parse.ParseUser;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class UsuariosFragment_ extends Fragment {
     private ListView listView;
     private ArrayAdapter<ParseUser> adapter;

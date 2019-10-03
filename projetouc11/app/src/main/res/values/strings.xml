@@ -7,7 +7,7 @@
     <string name="back4app_client_key">OECYspblmdvvYzhj3jjt3YB38nvdN5N8fcjGhgyM</string>
 
     <string name="app_name">Em Produção</string>
-    <string name="appbar_scrolling_view_behavior">texto</string>
+
     <string name="title_activity_feed_usuarios">FeedUsuariosActivity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
